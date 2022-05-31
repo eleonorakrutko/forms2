@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучаем Формы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>
+            Наша форма (тестируем-разбираем)
+        </h2>
+        <form action="send.html" method="GET" name="test" novalidate>
+            <input type="text" name="testName" maxlength="15" size="25" placeholder="Укажите Ваше Имя..." required>
+            <input type="text" name="testPhone" placeholder="Укажите Ваш Телефон..." pattern="[0-9]+" required>
+            
+            <input type="submit" value="Заказать обратный звонок">
+            <hr>
+                <input type="reset" value="Сброс данных">
+                <input type="button" value="Кнопка">
+                <input type="image" src="img/button.png">
+                <hr>
+               <label>
+                  <p>Введите пароль</p>
+                <input type="password" name="testPassword" maxlength="20">
+                </label>
+
+                <label for="testEmailId">
+                  <p>Введите email</p>
+                <input type="email" name="testEmail" id="testEmailId">
+                <hr>
+                <input type="color" name="testColor">
+                 <input type="date" name="testData">
+                    <input type="time" name="testTime">
+                    <p>Что предпочитаете курить?</p>
+                    <input type="text" name="testSmoke" value="ничего" >
+                </label>
+                <fieldset>
+                <legend>Это важно для нас</legend>
+                <P>Курите ли вы?</P>
+                <label> Да - <input type="radio" name="testSmokeQuestion" value="Yes"></label>
+                <br>
+                <label> Нет - <input type="radio" name="testSmokeQuestion" value="No"></label>
+                <br>
+                <label> Иногда - <input type="radio" name="testSmokeQuestion" value="Rarely" checked></label>
+                <br>
+                </fieldset>
+
+                <p>Какие газеты вы читаете?</p>
+                <label> Гомельская правда - <input type="checkbox" name="testNews1" value="GP" checked></label>
+                <br>
+                <label> Аргументы и факты - <input type="checkbox" name="testNews2" value="AiF"></label>
+                <br>
+                <label> PlayBoy - <input type="checkbox" name="testNews3" value="PB"></label>
+                <hr>
+
+
+                <p>Сколько часов в сутки вы спите?</p>
+                <select name="testSleep" size="4" multiple>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                 <option value="8">Более семи</option>
+                </select>
+                <hr>
+
+                <input list="cocktail" name="testBar">
+                <datalist id="cocktail">
+                 <option>Аперитивы</option>
+                 <option>Горячие</option>
+                <option>Десертные</option>
+                <option>Диджестивы</option>
+                <option>Молочные</option>
+                <option>Слоистые</option>
+                </datalist> 
+                <hr>
+
+                <textarea name="testEdit" cols="60" rows="15" placeholder="Напишите нам"></textarea>
+
+        </form>
+    </div>
+</body>
+</html>
